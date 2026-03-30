@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <style>
+        header {
+            background-color: #F2F2F2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+
+        header h1 {
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .centered-container {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            /* Centra el iframe dentro del div */
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro - Inicio</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Logotipo El Faro" width="300">
+        <h1>Periódico El Faro</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="deporte.html">Deporte</a></li>
+            <li><a href="negocios.html">Negocios</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="noticias-generales">
+            <h2>Noticias Generales</h2>
+            <table border="1" align="center">
+                <thead>
+                    <tr>
+                        <th>Actualidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h3>Tripulación de Artemis II se alista para histórico regreso a la órbita lunar: “El mundo
+                                ha esperado mucho tiempo”</h3>
+                            <p><strong>Categoría:</strong> Mundial</p>
+                            <div class="centered-container">
+                                <audio controls>
+                                    <source src="assets/audio.mp3" type="audio/mpeg">
+                                    Tu navegador no soporta el elemento audio.
+                                </audio>
+                            </div>
+                            <p>Los astronautas destacaron el carácter histórico del vuelo, aunque advirtieron que el
+                                lanzamiento aún depende de factores técnicos y climáticos.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Esto es lo que le pasa a tu cerebro cuando te jubilas, según la ciencia</h3>
+                            <p><strong>Categoría:</strong> Curiosidades</p>
+                            <div class="centered-container">
+                                <iframe src="https://archive.org/embed/e-dv398_clyde_vaughn_002.ogg" width="560"
+                                    height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <p>El paso de la vida laboral a la jubilación implica cambios profundos en la rutina diaria.
+                                Un reportaje de The New York Times explora lo que han descubierto los investigadores
+                                sobre esta transición.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>En AIEP, Olimpiadas Especiales Chile da inicio al primer Registro Nacional de
+                                deportistas con discapacidad intelectual</h3>
+                            <p><strong>Categoría:</strong> Sociedad</p>
+                            <div class="centered-container">
+                                <img src="assets/noticia-2.jpg">
+                            </div>
+                            <p>La iniciativa de Olimpiadas Especiales Chile permitirá identificar a niños, niñas y
+                                jóvenes en todo el país, promoviendo su participación en el deporte y aportando al
+                                desarrollo de políticas de inclusión.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Periódico El Faro - Actividad Sumativa Semana 2 - por Luimar Villegas</p>
+    </footer>
+</body>
+
+</html>
