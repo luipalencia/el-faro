@@ -1,77 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <style>
-        header {
-            background-color: #F2F2F2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px;
-        }
-
-        header h1 {
-            margin-top: 10px;
-            font-family: Arial, sans-serif;
-        }
-    </style>
     <meta charset="UTF-8">
-    <title>El Faro - Sección Negocios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro - Negocios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .top-notice { background-color: #198754; color: white; font-weight: bold; }
+        footer { background-color: #212529; color: white; }
+    </style>
 </head>
+<body class="d-flex flex-column min-vh-100">
 
-<body>
-    <header>
-        <img src="assets/logo.png" alt="Logotipo El Faro" width="300">
-        <h1>El Faro - Sección Negocios</h1>
+    <div class="top-notice text-center py-2">
+        ECONOMÍA: Santander aprueba dividendos por más de 3.500 millones.
+    </div>
+
+    <header class="bg-light py-4 border-bottom">
+        <div class="container text-center">
+            <img src="assets/logo.png" alt="Logotipo El Faro" width="180" class="mb-2">
+            <h1 class="display-5">Sección Negocios</h1>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="deporte.html">Deporte</a></li>
-            <li><a href="negocios.html">Negocios</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="deporte.html">Deporte</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="negocios.html">Negocios</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <main>
-        <section>
-            <h2>Noticias de Negocios y Emprendimientos</h2>
-            <table border="1" align="center">
-                <tr>
-                    <td>
-                        <h3>El crédito privado abre mayor caza desde 2008, con la guerra en Irán escalando</h3>
-                        <p><strong>Categoría:</strong> Internacional</p>
-                        <p>Gestores oportunistas se preparan para comprar préstamos ilíquidos tras los límites de
-                            reembolso en grandes fondos y el repunte de estructuras PIK.</p>
+    <main class="flex-grow-1 container my-5">
+        <h2 class="mb-4">Mercados y Emprendimiento</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-7">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">Internacional</span>
+                        <h3>Crédito privado: mayor caza desde 2008</h3>
+                        <p>Gestores se preparan para comprar préstamos tras la escalada de tensiones en Irán.</p>
+                    </div>
+                </div>
+            </div>
 
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>UBS congela 400 millones y reabre la alarma inmobiliaria</h3>
-                        <p><strong>Categoría:</strong> Economía</p>
-                        <p>El bloqueo de retiradas en un fondo europeo de UBS vuelve a encender una señal clásica de
-                            estrés financiero.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>Santander aprueba un dividendo de más de 3.500 millones y lanza recompras por 5.000 millones
-                        </h3>
-                        <p><strong>Categoría:</strong> Banca y Negocios</p>
-                        <p>Banco Santander aprueba dividendos por más de 3.500 millones de euros y un ambicioso programa
-                            de recompra de acciones para reforzar la rentabilidad del accionista.</p>
-                        </p>
-                    </td>
-                </tr>
-            </table>
-        </section>
+            <div class="col-md-5">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Banca</span>
+                                <h5>UBS congela 400 millones</h5>
+                                <p class="small">Se reabre la alarma inmobiliaria en fondos europeos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card border-0 bg-dark text-white">
+                            <div class="card-body text-center">
+                                <h6>¿Buscas Deporte?</h6>
+                                <a href="deporte.html" class="btn btn-sm btn-outline-light">Ir a Deportes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <p><a href="index.html">Volver al inicio</a></p>
+    <footer class="py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h5>El Faro - Finanzas</h5>
+                    <p class="small text-secondary">Información actualizada sobre el IBEX 35, Wall Street y emprendimientos locales.</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="mb-0">&copy; 2026 Periódico El Faro</p>
+                    <p class="small">Actividad Sumativa por Luimar Villegas</p>
+                </div>
+            </div>
+        </div>
     </footer>
-</body>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

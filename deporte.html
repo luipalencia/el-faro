@@ -1,75 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <style>
-        header {
-            background-color: #F2F2F2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px;
-        }
-
-        header h1 {
-            margin-top: 10px;
-            font-family: Arial, sans-serif;
-        }
-    </style>
     <meta charset="UTF-8">
-    <title>El Faro - Sección Deportes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro - Deportes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .top-notice { background-color: #004085; color: white; font-weight: bold; }
+        footer { background-color: #212529; color: white; }
+    </style>
 </head>
+<body class="d-flex flex-column min-vh-100">
 
-<body>
-    <header>
-        <img src="assets/logo.png" alt="Logotipo El Faro" width="300">
-        <h1>El Faro - Sección Deporte</h1>
+    <div class="top-notice text-center py-2">
+        DEPORTES: La Roja Sub 20 vence a Perú en amistoso a puertas cerradas.
+    </div>
+
+    <header class="bg-light py-4 border-bottom">
+        <div class="container text-center">
+            <img src="assets/logo.png" alt="Logotipo El Faro" width="180" class="mb-2">
+            <h1 class="display-5">Sección Deportes</h1>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="deporte.html">Deporte</a></li>
-            <li><a href="negocios.html">Negocios</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="deporte.html">Deporte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="negocios.html">Negocios</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <main>
-        <section>
-            <h2>Noticias Deportivas</h2>
-            <table border="1" align="center">
-                <tr>
-                    <td>
-                        <h3>Colombia cayó ante una Francia superior en amistoso de fecha FIFA</h3>
-                        <p><strong>Categoría:</strong> Fútbol</p>
-                        <p>El equipo cafetero fue superado en Maryland y reaccionó tarde, en un partido marcado por el
-                            doblete de Désiré Doué.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>La Roja Sub 20 venció a su par de Perú en un amistoso a puertas cerradas</h3>
-                        <p><strong>Categoría:</strong> Fútbol</p>
-                        <p>La escuadra dirigida por Sebastián Miranda batió al equipo del Rímac con anotaciones de dos
-                            jugadores que Colo Colo ha promovido este año al primer equipo: el volante Vicente Martínez
-                            y el delantero Yastin Cuevas.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>Jannik Sinner vs. Jiri Lehecka: la final del Miami Open fue interrumpida por lluvia</h3>
-                        <p><strong>Categoría:</strong> Tenis</p>
-                        <p>La final del Miami Open tiene todos los ingredientes para ser un gran espectáculo deportivo.
-                        </p>
-                    </td>
-                </tr>
-            </table>
-        </section>
+    <main class="flex-grow-1 container my-5">
+        <h2 class="mb-4">Noticias Deportivas</h2>
+        <div class="row g-4">
+            <div class="col-12">
+                <div class="card shadow-sm border-primary">
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">Fútbol</span>
+                        <h3 class="card-title">Colombia cayó ante una Francia superior en amistoso</h3>
+                        <p class="card-text">El equipo cafetero fue superado en Maryland en un partido marcado por el doblete de Désiré Doué.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-info text-dark mb-2">Tenis</span>
+                        <h4 class="h5">Sinner vs. Lehecka: Final interrumpida</h4>
+                        <p class="small">La lluvia detuvo el gran espectáculo deportivo en el Miami Open.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="bg-light p-4 rounded h-100">
+                    <h5>Más de El Faro</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="negocios.html" class="text-decoration-none">Ver Noticias de Negocios</a></li>
+                        <li><a href="index.html" class="text-decoration-none">Ir a Portada</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <p><a href="index.html">Volver al inicio</a></p>
+    <footer class="py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>El Faro - Deportes</h5>
+                    <p class="small text-secondary">Toda la cobertura del deporte nacional e internacional.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2026 Periódico El Faro</p>
+                    <p class="small">Actividad Sumativa por Luimar Villegas</p>
+                </div>
+            </div>
+        </div>
     </footer>
-</body>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
